@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra</title>
+    <!--Taiwind CSS CDN Link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!--Poppins font link-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <!--Icon link-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      .main-nav {
+        position: sticky;
+        top: 0;
+        z-index: 19; /* Ensure navbar is above other content */
+        background-color: white; /* White background for the navbar */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow to create separation */
+      }
+    </style>
+  </head>
+  <body>
+    <!--Discount navigation bar-->
+    <nav id="discount-bar" class="p-2 flex justify-around">
+      <h1 class="text-center text-white text-xl">
+        Sign Up and <b>GET 20% OFF</b> for your first Order
+      </h1>
+      <button id="discount-close" class="text-white">X</button>
+    </nav>
+    <!--Side navigation bar-->
+    <section id="sidenav">
+      <div id="menuclose" class="text-right cursor-pointer">X</div>
+      <div class="flex flex-col gap-5">
+        <h2 class="hover:underline cursor-pointer">Home</h2>
+        <h2 class="hover:underline cursor-pointer">New Arrival</h2>
+        <h2 class="hover:underline cursor-pointer">Most Wanted</h2>
+        <h2 class="hover:underline cursor-pointer">Collections</h2>
+        <h2 class="hover:underline cursor-pointer">
+          <a href="contactus.html">Contact us</a>
+        </h2>
+      </div>
+    </section>
+    <!--Navigation bar-->
+    <nav class="main-nav flex items-center justify-between p-2 md: text-sm">
+      <div>
+        <h1 class="nostra text-3xl font-extrabold">Nostra</h1>
+      </div>
+      <div class="flex gap-20 hidden lg:flex">
+        <h2 class="hover:underline cursor-pointer">Home</h2>
+        <h2 class="hover:underline cursor-pointer">New Arrival</h2>
+        <h2 class="hover:underline cursor-pointer">Most Wanted</h2>
+        <h2 class="hover:underline cursor-pointer">Collections</h2>
+        <h2 class="hover:underline cursor-pointer">Contact us</h2>
+      </div>
+      <div class="menu lg:hidden">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </nav>
+    <!--MAIN IMAGE-->
+    <div class="image-container mt-5">
+      <div class="image-slider flex">
+        <div class="slide-items">
+          <img src="m1.avif" />
+        </div>
+        <div class="slide-items">
+          <img src="m2.avif" />
+        </div>
+        <div class="slide-items">
+          <img src="m3.avif" />
+        </div>
+        <div class="slide-items">
+          <img src="m4.avif" />
+        </div>
+      </div>
+      <div class="slider-btns">
+        <button id="btn-prev">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+        <button id="btn-next">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+
+    <!--Brands-->
+    <section class="p-2">
+      <div>
+        <h1 class="brands text-3xl font-extrabold mt-2">Brands</h1>
+      </div>
+      <div class="brandscontainer">
+        <div class="image-items">
+          <img src="leaves.png" />
+          <p>Leaves</p>
+        </div>
+
+        <div class="image-items">
+          <img src="behance.png" />
+          <p>Puma</p>
+        </div>
+
+        <div class="image-items">
+          <img src="behance.png" />
+          <p>Behance</p>
+        </div>
+
+        <div class="image-items">
+          <img src="simple.png" />
+          <p>Simple</p>
+        </div>
+        <div class="image-items">
+          <img src="twitch.png" />
+          <p>Twitch</p>
+        </div>
+
+        <div class="image-items">
+          <img src="adidas.png" />
+          <p>adidas</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Customer Experience-->
+    <section class="p-2 mt-7">
+      <div class="flex justify-between items-center">
+        <div>
+          <h1 class="exp-head text-2xl font-extrabold">
+            We Provide Best <br />
+            Customer Experiences
+          </h1>
+        </div>
+        <div class="exp-heading1">
+          <p class="text-xl">
+            || We ensure that our customer have the best shopping experience
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 flex gap-5">
+        <div class="exp-feedback">
+          <ion-icon
+            class="checkicon"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <h1 class="font-bold">Original Products</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,
+            impedit.
+          </p>
+        </div>
+        <div class="exp-feedback">
+          <ion-icon class="checkicon" name="happy-outline"></ion-icon>
+          <h1 class="font-bold">Satisfaction Guarantee</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,
+            impedit.
+          </p>
+        </div>
+        <div class="exp-feedback">
+          <ion-icon class="checkicon" name="brush-outline"> ></ion-icon>
+          <h1 class="font-bold">New Arrival Everyday</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,
+            impedit.
+          </p>
+        </div>
+        <div class="exp-feedback">
+          <ion-icon class="checkicon" name="rocket-outline"> ></ion-icon>
+          <h1 class="font-bold">Fast & Free Shipping</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti,
+            impedit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--NEW ARRIVALS-->
+
+    <section class="p-2 mt-5">
+      <h1 class="text-2xl font-extrabold">New Arrivals</h1>
+      <div class="flex gap-5 mt-5">
+        <div class="newarrival-shirts">
+          <img src="f1.jpg" />
+          <div class="overlay-black">
+            <h1>Shop Now <ion-icon name="arrow-forward-outline"></ion-icon></h1>
+          </div>
+        </div>
+        <div class="newarrival-shirts">
+          <img src="f2.jpg" />
+          <div class="overlay-black">
+            <h1>Shop Now <ion-icon name="arrow-forward-outline"></ion-icon></h1>
+          </div>
+        </div>
+        <div class="newarrival-shirts">
+          <img src="f3.jpg" />
+          <div class="overlay-black">
+            <h1>Shop Now <ion-icon name="arrow-forward-outline"></ion-icon></h1>
+          </div>
+        </div>
+        <div class="newarrival-shirts">
+          <img src="f4.jpg" />
+          <div class="overlay-black">
+            <h1>Shop Now <ion-icon name="arrow-forward-outline"></ion-icon></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Most Wanted-->
+    <section class="p-2 mt-5">
+      <h1 class="text-2xl font-extrabold">Most Wanted</h1>
+      <div class="mw-container gap-5 mt-5">
+        <div class="newarrival-shirts1">
+          <img src="f1.jpg" />
+          <div class="mw-style">
+            <h1 class="mw-h1">SALE</h1>
+            <ion-icon class="heart" name="heart-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="newarrival-shirts1">
+          <img src="f2.jpg" />
+          <div class="mw-style">
+            <h1 class="mw-h1">SALE</h1>
+            <ion-icon class="heart" name="heart-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="newarrival-shirts1">
+          <img src="f3.jpg" />
+          <div class="mw-style">
+            <h1 class="mw-h1">SALE</h1>
+            <ion-icon class="heart" name="heart-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="newarrival-shirts1">
+          <img src="f4.jpg" />
+          <div class="mw-style">
+            <h1 class="mw-h1">SALE</h1>
+            <ion-icon class="heart" name="heart-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="newarrival-shirts1">
+          <img src="f5.jpg" />
+          <div class="mw-style">
+            <h1 class="mw-h1">SALE</h1>
+            <ion-icon class="heart" name="heart-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="newarrival-shirts1">
+          <img src="f6.jpg" />
+          <div class="mw-style">
+            <h1 class="mw-h1">SALE</h1>
+            <ion-icon class="heart" name="heart-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="newarrival-shirts1">
+          <img src="f7.jpg" />
+          <div class="mw-style">
+            <h1 class="mw-h1">SALE</h1>
+            <ion-icon class="heart" name="heart-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="newarrival-shirts1">
+          <img src="f1.jpg" />
+          <div class="mw-style">
+            <h1 class="mw-h1">SALE</h1>
+            <ion-icon class="heart" name="heart-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--newsletter-->
+
+    <section class="text-center mt-10">
+      <h1 class="text-3xl font-extrabold mt-5">Join our News Letter</h1>
+      <p class="mt-3">
+        Sign-up for our email newspaper to get exclusive discounts,updates and
+        more.
+      </p>
+      <input
+        type="text"
+        placeholder="Enter your Email address"
+        class="border border-black mt-1 p-2 m-3"
+        style="width: 80%"
+      />
+      <br />
+      <button class="subscribe text-white p-3 m-1 rounded-3xl hover:underline">
+        Subscribe
+      </button>
+    </section>
+
+    <!--Footer-->
+    <section class="footer text-white p-10 flex flex-col gap-5 mt-5">
+      <h1 class="text-4xl font-bold">Nostra</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+        natus?
+      </p>
+      <p>@ 2024 Nostra.com</p>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

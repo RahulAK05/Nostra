@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.image-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide-items {
+  flex-shrink: 0;
+  width: 100%;
+}
+.slide-items img {
+  width: 100%;
+  height: auto;
+}
+#discount-bar {
+  background-color: #1d232c;
+}
+.slider-btns button {
+  cursor: pointer;
+  font-size: 70px;
+  font-weight: 500;
+  border: none;
+  color: white;
+  width: 80px;
+  height: 80px;
+  line-height: 30px;
+}
+.slider-btns {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .slider-btns button {
+    font-size: 30px;
+  }
+  #discount-bar h1 {
+    font-size: small;
+  }
+  .brands {
+    font-size: x-large;
+  }
+  .nostra {
+    font-size: x-large;
+  }
+  .exp-feedback {
+    font-size: smaller;
+  }
+  .exp-feedback p {
+    font-size: 10px;
+  }
+  .exp-feedback .checkicon {
+    font-size: 20px;
+  }
+  .exp-feedback h1 {
+    font-size: smaller;
+  }
+  .overlay-black h1 {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .exp-heading1 {
+    display: none;
+  }
+}
+.image-items {
+  flex-grow: 1;
+}
+.brandscontainer {
+  display: flex;
+  margin-top: 2vw;
+  justify-content: space-between;
+  gap: 20px;
+}
+.image-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2vw;
+}
+.image-items p {
+  margin-top: 5%;
+}
+.image-items img {
+  height: auto;
+  width: 45%;
+}
+
+.menu {
+  cursor: pointer;
+  font-size: x-large;
+}
+#sidenav {
+  padding: 2%;
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: -50%;
+  background-color: #1d232c;
+  color: white;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+}
+.exp-feedback {
+  width: 25%;
+  height: auto;
+  background-color: #f2f4f7;
+  padding: 1%;
+}
+.checkicon {
+  font-size: 40px;
+  font: bolder;
+}
+.exp-feedback p {
+  margin-top: 3%;
+}
+.newarrival-shirts {
+  width: 25%;
+  height: auto;
+}
+.overlay-black {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+}
+.overlay-black h1 {
+  background-color: white;
+  border-radius: 10px;
+  border-width: 30%;
+  height: auto;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+}
+.newarrival-shirts {
+  position: relative;
+}
+.mw-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.newarrival-shirts1 {
+  flex: 0 0 24%;
+  scroll-snap-align: start;
+}
+
+.mw-container img {
+  width: 100%;
+  display: block;
+}
+.mw-container::-webkit-scrollbar {
+  display: none;
+}
+.newarrival-shirts1 {
+  position: relative;
+}
+.mw-style {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.heart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.mw-h1 {
+  font-size: small;
+  background-color: red;
+  width: fit-content;
+  color: white;
+  padding: 1%;
+}
+@media screen and (min-width: 768px) {
+  .heart {
+    font-size: 30px;
+  }
+  .mw-h1 {
+    font-size: 20px;
+  }
+  .image-items img {
+    width: 30%;
+  }
+  .image-items p {
+    font-size: 70%;
+  }
+}
+.subscribe {
+  background-color: #1d232c;
+}
+.footer {
+  background-color: #1d232c;
+}

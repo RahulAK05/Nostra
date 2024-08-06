@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 800px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-btns {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slide-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: calc(800px * 4); /* 4 is the number of slides */
+}
+
+.slide-items {
+  min-width: 800px;
+  height: 300px;
+}
+
+.slider-btns button {
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
